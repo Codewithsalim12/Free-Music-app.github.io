@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Music-App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="navbar">
+      <div class="logo">Music App</div>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Specifications</a></li>
+        <li><a href="#">Products</a></li>
+        <li><a href="#">Connect</a></li>
+      </ul>
+    </div>
+    <div class="content">
+      <div class="left-col">
+        <h1>THE <br> REAL SOUND </h1>
+        <p class="follow">Follow us on  Instagram ⬇️ </p>
+        <a href="https://www.instagram.com/mohammadsalim__567?igsh=ejljd2jo50NWNy">
+          <img src="covers/saleem.png" alt="" width="50" height="50"> <p class="Name">Mohammad salim mir</p><Button>Follow</Button></a>
+
+      </div>
+      <div class="right-col">
+        <p class="Tracks">Limited audio Tracks</p>
+        <p class="Click-here">Click below buttons to listen</p>
+        <img src="https://media.tenor.com/PWaOCHK8jKEAAAAi/music-notes-sound.gif" alt="Playing GIF" width="150px"
+          height="60px" id="playing-Gif">
+        <div class="images">
+          <img src="covers/play.png" alt="Play" width="40px" id="icon">
+          <img src="covers/fast-foward.png" alt="Next" width="40px" id="next-button" style="cursor: pointer;">
+        </div>
+        <div class="progress-bar">
+          <p class="Duration">Duration 🕒: 3:00</p>
+          <progress id="progress" value="0" max="100"></progress>
+
+        </div>
+        <div class="volume-control">
+          <p class="Volume"> Volume 🔊</p> <input type="range" id="volume" min="0" max="100" value="50">
+        </div>
+        <p class="Developer-name">Developed by Mohammad salim 
+
+        </p>
+      </div>
+    </div>
+  </div>
+  <audio id="mysong">
+    <source src="assets/song-1.mp3" type="audio/mp3">
+  </audio>
+  <footer>Copyright &copy; All rights Reserved Developed By Mohammad Salim Mir </footer>
+  <script src="app.js"></script>
+</body>
+
+</html>

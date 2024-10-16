@@ -1,0 +1,323 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;500;600;700&display=swap');
+
+:root {
+  --main-font-family: "Poppins", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  height: 100vh;
+  background-image: url(https://images.unsplash.com/photo-1473691955023-da1c49c95c78?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8bXVzaWMlMjBiYWNrZ3JvdW5kc3xlbnwwfHwwfHx8MA%3D%3D);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.navbar {
+  width: 88%;
+  margin: auto;
+  padding: 15px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: all 0.3s ease-in;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 40px;
+  font-family: var(--main-font-family);
+  color: #fff;
+  transition: all 0.3s ease-in;
+}
+
+ul {
+  display: flex;
+}
+
+ul li {
+  margin: 0 10px;
+  list-style-type: none;
+}
+
+ul li a {
+  text-decoration: none;
+  font-size: 15px;
+  font-family: var(--main-font-family);
+  color: rgb(255, 255, 255);
+  font-weight: 500;
+  transition: all 0.3s ease-in;
+}
+
+ul li a:hover {
+  color: rgb(0, 0, 0);
+}
+
+.content {
+  position: absolute;
+  width: 100%;
+  top: 20%;
+  display: flex;
+  justify-content: space-between;
+  transition: all 0.3s ease-in;
+}
+
+.left-col {
+  margin-left: 6%;
+  transition: all 0.3s ease-in;
+  padding-right: 10px;
+}
+
+.left-col h1 {
+  font-size: 90px;
+  color: #fff;
+  line-height: 120px;
+  font-family: var(--main-font-family);
+  margin-top: 40px;
+  transition: all 0.3s ease-in;
+}
+.left-col .follow{
+  font-family: var(--main-font-family);
+  font-size: 15px;
+  font-weight: 900;
+  letter-spacing: 1px;
+  padding-bottom: 20px;
+  color: #00ffff;
+  transition: all 0.3s ease-in;
+}
+.left-col a{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-bottom: 20px;
+  text-decoration: none;
+  transition: all 0.3s ease-in;
+}
+.left-col .Name{
+  color: #fff;
+  font-family: var(--main-font-family);
+  font-size: 0.8em;
+  font-weight: 500;
+  transition: all 0.1s ease-in;
+}
+.left-col a button{
+  padding: 4px 20px;
+  font-family: var(--main-font-family);
+  font-size: 12px;
+  font-weight: 500;
+  background-color: rgb(255, 0, 140) ;
+  color: #ffffff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease-in;
+}
+.left-col a button:hover{
+  background-color: crimson;
+}
+
+.right-col {
+  margin-right: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  box-sizing: border-box;
+  /* margin-bottom: 140px; */
+  background-color: transparent;
+  border:1px solid gray ;
+  width: 300px;
+  min-height: 400px;
+  border-radius: 10px;
+  padding: 10px 10px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+  transition: all 0.3s ease-in;
+}
+.right-col .Tracks{
+  font-family: var(--main-font-family);
+  font-size: 0.7em;
+  padding-bottom: 10px;
+  font-weight: 500;
+  color: rgb(204, 8, 8);
+}
+.right-col .Click-here {
+  font-size: 12px;
+  color: #ffffff;
+  font-weight: 600;
+  margin-right: 15px;
+  font-family: var(--main-font-family);
+  background-color: rgb(255, 0, 149);
+  border-radius: 30%;
+  padding: 6px 10px;
+  display: block;
+  transition: all 0.3s ease-in;
+  margin-bottom: 10px;
+}
+.images img{
+  margin: 10px;
+  transition: all 0.3s ease-in;
+}
+
+#icon, #next-button {
+  width: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease-in;
+}
+#playing-Gif{
+  display: none;
+  transition: all 0.3s ease-in;
+}
+.progress-bar{
+  width: 100%;
+  height: 8px;
+  border-radius: 50%;
+  margin-bottom: 40px;
+  transition: all 0.3s ease-in;
+}
+.progress-bar  p{
+  font-size: 13px;
+  font-weight: 500;
+  padding-top: 30px;
+  box-sizing: border-box;
+  font-family: var(--main-font-family);
+  color: #fff;
+  transition: all 0.3s ease-in;
+}
+#progress{
+  width: 100%;
+  height: 100%;
+  background-color: rgb(199, 250, 199);
+  border-radius: 5px;
+  border: none;
+  transition: all 0.3s ease-in;
+  cursor: pointer;
+}
+
+.volume-control {
+  width: 100%;
+  height: 20px;
+  margin: 30px 0;
+  transition: all 0.3s ease-in;
+}
+.volume-control p{
+  padding-top: 20px;
+  box-sizing: border-box;
+  font-size: 13px;
+  font-weight: 500;
+  font-family: var(--main-font-family);
+  color: #fff;
+  margin-bottom: 8px;
+  transition: all 0.3s ease-in;
+}
+
+input[type="range"] {
+  width: 100%;
+  height: 20px;
+  background-color: #ccc;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease-in;
+}
+.content .Developer-name{
+  margin-top: 90px;
+ color: #9dff00;
+ font-size: 0.7em;
+ font-family: var(--main-font-family);
+}
+footer{
+  background-color: rgb(56, 50, 50);
+  text-align: center;
+  color: #fff;
+  font-family: var(--main-font-family);
+  padding: 10px 0px;
+  font-size: 12px;
+  position: absolute;
+  bottom: 0;
+  margin-top: 100px;
+  display: none;
+}
+/* Add media queries for responsiveness */
+@media (max-width: 900px) {
+  .container {
+    height: auto;
+    padding: 20px;
+    width: 100%;
+  }
+  .navbar {
+    flex-direction: column;
+  }
+  ul li{
+    margin: 0px 5px;
+  }
+  ul li a{
+    font-size: 10px;
+    cursor: pointer;
+  }
+  .content {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+    padding-right: 45px;
+    transition: all 1s ease-in;
+  }
+  .left-col {
+    margin-left: 60px;
+    transition: all 1s ease-in;
+  }
+  .left-col h1{
+    visibility: visible;
+    color: black;
+    margin-top: 180px;
+    font-size: 30px;
+    transition: all 1s ease-in;
+    line-height: 60px;
+    margin-bottom: 30px;
+  }
+  .left-col a{
+    justify-content: start;
+  }
+  .left-col .Name{
+    color: #000000;
+  }
+  .left-col .follow{
+    color: #000000;
+    font-weight: 500;
+  }
+  .right-col {
+    margin-right: -65px;
+    flex-direction: column;
+    width: 300px;
+    border: 1px solid #ddd;
+    margin-bottom: 100px;
+  }
+  .right-col p {
+    font-size: 10px;
+    color: black;
+  }
+  #icon, #next-button {
+    width: 30px;
+  }
+  .progress-bar{
+    width: 50%;
+    border-radius: 5px;
+  }
+  .volume-control{
+    width: 50%;
+    margin-top: 30px;
+  }
+}
+@media (max-width: 400px) {
+ .content{
+  padding-right: 110px;
+ }
+
+
+
+}
