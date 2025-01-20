@@ -1,4 +1,4 @@
-# Free-Music-app.github.io
+# [Free-Music-app.github.io](https://codewithsalim12.github.io/Free-Music-app.github.io/)
 Your favourite listening partener
 
 # 🎵 Music App
